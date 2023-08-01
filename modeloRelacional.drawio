@@ -1,0 +1,54 @@
+<mxfile host="app.diagrams.net" modified="2023-08-01T13:07:14.939Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="36b8HzMQ-uNG8uO3jHA8" version="21.6.6" type="device">
+  <diagram name="Página-1" id="2ThHIB2hj7al_CIfCrfY">
+    <mxGraphModel dx="1214" dy="601" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Its1jZFPYfst228mhnEv-110" value="Persona" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="334" y="40" width="160" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="Its1jZFPYfst228mhnEv-111" value="+Identificacion&lt;br&gt;+tipoDocumento&lt;br&gt;+nombres&lt;br&gt;+apellidos&lt;br&gt;+fechaNaciemiento&lt;br&gt;+ciudadResidencia&lt;br&gt;+direccion&lt;br&gt;+telefono&lt;br&gt;+celular&lt;br&gt;+tipoPersona&amp;lt;fk&amp;gt;&lt;br&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="Its1jZFPYfst228mhnEv-110">
+          <mxGeometry y="50" width="160" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="Its1jZFPYfst228mhnEv-114" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Its1jZFPYfst228mhnEv-112">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="330" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Its1jZFPYfst228mhnEv-112" value="Tipo" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="150" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Its1jZFPYfst228mhnEv-113" value="+id&lt;br&gt;+nombre&lt;br&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="Its1jZFPYfst228mhnEv-112">
+          <mxGeometry y="50" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Its1jZFPYfst228mhnEv-115" value="Juzgado" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="827" y="70" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Its1jZFPYfst228mhnEv-116" value="+id&lt;br&gt;+nombre&lt;br&gt;+direccion&lt;br&gt;+telefono" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="Its1jZFPYfst228mhnEv-115">
+          <mxGeometry y="50" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Its1jZFPYfst228mhnEv-118" value="Caso" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="590" y="125" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Its1jZFPYfst228mhnEv-119" value="+id&lt;br&gt;+persona&amp;lt;fk&amp;gt;&lt;br&gt;+Juzgado&amp;lt;fk&amp;gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="Its1jZFPYfst228mhnEv-118">
+          <mxGeometry y="50" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Its1jZFPYfst228mhnEv-120" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="Its1jZFPYfst228mhnEv-116" target="Its1jZFPYfst228mhnEv-119">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Its1jZFPYfst228mhnEv-121" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.002;entryY=0.372;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Its1jZFPYfst228mhnEv-111" target="Its1jZFPYfst228mhnEv-119">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Its1jZFPYfst228mhnEv-122" value="Proceso" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="360" width="160" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="Its1jZFPYfst228mhnEv-123" value="+tipo&lt;br&gt;+juzagado&amp;lt;fk&amp;gt;&lt;br&gt;+fechaVencimiento&lt;br&gt;+descripción&lt;br&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="Its1jZFPYfst228mhnEv-122">
+          <mxGeometry y="50" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Its1jZFPYfst228mhnEv-127" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Its1jZFPYfst228mhnEv-119" target="Its1jZFPYfst228mhnEv-122">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,111 @@
+<h1> juzgados </h1>
+
+<div class="content" align="center" >
+  <div class="card col-11">
+  <div class="card-body">
+          <div class="row text-center">
+              <div class="col-12 table-responsive text-sm text-muted">
+                  <table id="tablaJuzgados" name="tablaJuzgados" class="table table-hover text-nowrap">
+                      <thead>
+                          <tr>
+                              <th>Id</th>
+                              <th>Nombre juzgado </th>
+                              <th>Direccion</th>
+                              <th>Teléfono</th>
+
+                          </tr>
+                      </thead>
+                      <tbody *ngFor="let item of obtJuzgados, let i = index ">
+                          <tr >
+                              <td>{{item.id}}
+                              <td>{{item.nombre}} </td>
+                              <td>{{item.telefono}}</td>
+                              <td>{{item.telefono}} </td>
+
+                              <!-- <button  class="btn bg-olive btn-sm" type="button"  tooltip="Registrar" (click)="getEmitirDataRemisiones(); btnAtenderRem(item, i)" > A</button> -->
+                          </tr>
+                      </tbody>
+                  </table>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+<h1> Personas </h1>
+
+<div class="content" align="center" >
+  <div class="card col-11">
+  <div class="card-body">
+          <div class="row text-center">
+              <div class="col-12 table-responsive text-sm text-muted">
+                  <table id="tablaPersona" name="tablaPersona" class="table table-hover text-nowrap">
+                      <thead>
+                          <tr>
+                              <th>Id</th>
+                              <th>Tipo identificacion</th>
+                              <th>Documento</th>
+                              <th>Nombres completos</th>
+                              <th>Fecha Naciemiento</th>
+                              <th>Ciudad residencia</th>
+                              <th>Direccion</th>
+
+                          </tr>
+                      </thead>
+                      <tbody *ngFor="let item of obtPersonas, let i = index ">
+                          <tr >
+                              <td>{{item.id}}
+                              <td>{{item.identificacion}} </td>
+                              <td>{{item.identificacion}}</td>
+                              <td>{{item.nombres}} {{item.apelllidos}} </td>
+                              <td>{{item.fechaNaciemiensto}}</td>
+                              <td>{{item.ciudadResidencia}}</td>
+                              <td>{{item.direccion}}</td>
+
+                              <!-- <button  class="btn bg-olive btn-sm" type="button"  tooltip="Registrar" (click)="getEmitirDataRemisiones(); btnAtenderRem(item, i)" > A</button> -->
+                          </tr>
+                      </tbody>
+                  </table>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+<h1> Casos </h1>
+
+<div class="content" align="center" >
+  <div class="card col-11">
+  <div class="card-body">
+          <div class="row text-center">
+              <div class="col-12 table-responsive text-sm text-muted">
+                  <table id="tablaCaso" name="tablaCaso" class="table table-hover text-nowrap">
+                      <thead>
+                          <tr>
+                              <th>Id del caso</th>
+                              <th>Cedula de la persona</th>
+                              <th>Nombre del Juzgado relacionado al caso</th>
+                              <th>nombre del juzgado</th>
+
+                          </tr>
+                      </thead>
+                      <tbody *ngFor="let item of obtcaso, let i = index ">
+                          <tr >
+                              <td>{{item.NumeroCaso}}
+                              <td>{{item.IdenPersona}} </td>
+                              <td>{{item.NombrePersona}} {{item.ApellidoPersona}}</td>
+                              <td>{{item.IdJuzgado}} </td>
+
+                              <!-- <button  class="btn bg-olive btn-sm" type="button"  tooltip="Registrar" (click)="getEmitirDataRemisiones(); btnAtenderRem(item, i)" > A</button> -->
+                          </tr>
+                      </tbody>
+                  </table>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
